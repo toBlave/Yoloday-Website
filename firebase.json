@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "yoloday-public",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}

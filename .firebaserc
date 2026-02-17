@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "yoloday"
+  },
+  "targets": {
+    "yoloday": {
+      "hosting": {
+        "yoloday-public": [
+          "yoloday-public"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Firebase local state/logs
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# Env files (if you add any later)
+.env
+.env.*
+!.env.example
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*~
