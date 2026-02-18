@@ -708,14 +708,14 @@
         await flyLettersToHero();
         await wait(400);
         yolo.classList.add('v-center'); holiday.classList.add('v-center');
-        await wait(800);
+        await wait(600);
         holiText.style.width = holiText.offsetWidth + 'px'; await wait(20);
         holiText.classList.add('vanish');
         yolo.classList.add('collide-yolo'); holiday.classList.add('collide-day');
         await wait(500);
         yolo.classList.add('rebound-yolo'); holiday.classList.add('rebound-day');
         await wait(150); dot.classList.add('visible');
-        await wait(2000); dot.classList.add('pop');
+        await wait(800); dot.classList.add('pop');
         yolo.style.transition = `transform ${MERGE_IN_MS}ms cubic-bezier(.22,.61,.36,1)`;
         holiday.style.transition = `transform ${MERGE_IN_MS}ms cubic-bezier(.22,.61,.36,1)`;
         yolo.classList.remove('rebound-yolo');
