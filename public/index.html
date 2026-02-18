@@ -322,6 +322,7 @@
     // Clear inline transform-only transitions so final snap can animate top+opacity smoothly.
     yolo.style.removeProperty('transition');
     holiday.style.removeProperty('transition');
+
     await wait(200);
     
     // Move word clouds out of stage so they can fade independently
@@ -361,7 +362,7 @@
     // Remove empty stage container
     stage.remove();
     
-    await wait(800); // Wait for word clouds to finish fading out
+
     
     // Remove word clouds after they've faded
     wordClouds.forEach(w => w.remove());
