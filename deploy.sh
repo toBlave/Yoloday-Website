@@ -8,7 +8,7 @@
 # 3. Make sure you have added the custom domains 'yolo.day' and 'www.yolo.day' to your
 #    Firebase Hosting settings and configured your DNS records accordingly.
 #    - yolo.day should be the primary domain
-#    - www.yolo.day should redirect to yolo.day (301 redirect)
+#    - www.yolo.day should be set to redirect to yolo.day (configure this in Firebase Console)
 #    - Firebase automatically handles HTTP to HTTPS redirects
 
 # This will deploy to the "yoloday-public" hosting site.
@@ -18,6 +18,6 @@ firebase deploy --only hosting:yoloday-public
 echo "Deployment complete. Your 'coming soon' website should be live at https://yoloday-public.web.app"
 echo "Custom domain setup:"
 echo "1. Configure 'yolo.day' as the primary custom domain for 'yoloday-public' in the Firebase Console"
-echo "2. Configure 'www.yolo.day' as a secondary custom domain that will redirect to yolo.day"
+echo "2. Configure 'www.yolo.day' as a secondary domain and set it to redirect to yolo.day in Firebase Console"
 echo "3. Firebase automatically handles HTTP to HTTPS redirects for both domains"
 echo "Final URLs: https://yolo.day (primary), https://www.yolo.day → https://yolo.day (redirect)"
