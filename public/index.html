@@ -162,7 +162,7 @@
     gap: 3rem;
     align-items: center;
   }
-  .about-copy { flex: 1.4; }
+  .about-copy { flex: 1.25; }
   .about-copy p { font-size: 1.05rem; }
   .about-copy .lead { font-weight: 700; color: var(--purple); }
   .about-art {
@@ -170,21 +170,11 @@
     display: flex;
     justify-content: center;
   }
-  .about-panel {
+  .about-art img {
     width: 100%;
-    max-width: 380px;
-    aspect-ratio: 1 / 1;
-    background: rgba(255, 255, 255, 0.16);
-    border-radius: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-  .about-panel svg {
-    width: 100%;
+    max-width: 520px;
     height: auto;
-    color: var(--orange-ink);
+    display: block;
   }
 
   /* Travel */
@@ -307,7 +297,7 @@
     position: relative;
     width: 100%;
     max-width: 440px;
-    aspect-ratio: 1.32 / 1;
+    aspect-ratio: 1.24 / 1;
     border-radius: 24px;
     background: var(--orange-light);
     overflow: hidden;
@@ -319,11 +309,11 @@
   }
   .team-photo img {
     display: block;
-    height: 96%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
+    aspect-ratio: 1 / 1.05;
     width: auto;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center;
     border-radius: 18px;
     background: var(--cream-soft);
   }
@@ -472,14 +462,7 @@
       </p>
     </div>
     <div class="about-art">
-      <div class="about-panel" aria-hidden="true">
-        <svg viewBox="0 -8 120 160" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M60 -6v20"/>
-          <path d="M60 14c-19 0-34 14-34 33 0 13 7 21 13 28 4 5 6 9 6 15h30c0-6 2-10 6-15 6-7 13-15 13-28 0-19-15-33-34-33Z"/>
-          <path d="M46 90h28M48 100h24M52 110h16"/>
-          <path d="M18 46 8 42M102 46l10-4M24 24 16 17M96 24l8-7"/>
-        </svg>
-      </div>
+      <img src="images/lightbulb.png" alt="Line drawing of a hanging lightbulb">
     </div>
   </div>
 </section>
