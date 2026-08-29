@@ -1,138 +1,496 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="Yoloday builds AI-powered products for travelers and startup founders, starting with Yoloday Travel and Yoloday Branding.">
-    <title>Yoloday - AI-Powered Travel & Branding Tools</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 3rem 1.5rem 4rem;
-        }
-        h1 {
-            font-size: 2.75rem;
-            color: #1a73e8;
-            margin-bottom: 0.25rem;
-        }
-        .tagline {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 2.5rem;
-        }
-        h2 {
-            font-size: 1.4rem;
-            color: #1a73e8;
-            margin-top: 2.5rem;
-            margin-bottom: 0.75rem;
-            border-bottom: 2px solid #e8eef7;
-            padding-bottom: 0.4rem;
-        }
-        p {
-            font-size: 1rem;
-            margin: 0.5rem 0;
-        }
-        .product {
-            background: #ffffff;
-            border: 1px solid #e0e4ea;
-            border-radius: 8px;
-            padding: 1.25rem 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .product h3 {
-            margin: 0 0 0.4rem;
-            font-size: 1.1rem;
-            color: #1a1a1a;
-        }
-        .stage {
-            display: inline-block;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #1a73e8;
-            background: #e8eef7;
-            border-radius: 999px;
-            padding: 0.15rem 0.7rem;
-            margin-bottom: 0.5rem;
-        }
-        .team-member {
-            background: #ffffff;
-            border: 1px solid #e0e4ea;
-            border-radius: 8px;
-            padding: 1.25rem 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .team-member h3 {
-            margin: 0 0 0.15rem;
-            font-size: 1.05rem;
-            color: #1a1a1a;
-        }
-        .role {
-            font-size: 0.9rem;
-            color: #1a73e8;
-            font-weight: 600;
-            margin-bottom: 0.4rem;
-        }
-        .contact {
-            margin-top: 2.5rem;
-            font-size: 1rem;
-            color: #666;
-        }
-        .legal {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #999;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Yoloday is a Melbourne-based AI solutions agency building AI-powered products for travelers and startup founders, starting with Yoloday Travel and Yoloday Branding.">
+<title>Yoloday - AI Solutions Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #fffacd;
+    --cream-soft: #fff6c8;
+    --orange: #fe5900;
+    --orange-light: #ff8a4c;
+    --purple: #5b4fe5;
+    --ink: #3a2a1a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+  }
+
+  h1, h2, .display {
+    font-family: 'Bagel Fat One', 'Baloo 2', sans-serif;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Nav */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--cream);
+    border-bottom: 3px solid var(--orange);
+  }
+  .nav .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+  .nav-logo {
+    font-family: 'Bagel Fat One', sans-serif;
+    color: var(--orange);
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--purple);
+    font-size: 0.95rem;
+  }
+  .nav-links a:hover { color: var(--orange); }
+
+  /* Sections */
+  .section {
+    padding: 4.5rem 0;
+    overflow: hidden;
+  }
+  .section--orange {
+    background: var(--orange);
+    color: var(--cream);
+  }
+  .section--orange .accent { color: var(--purple); }
+
+  .eyebrow {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--purple);
+    font-size: 1rem;
+    margin: 0 0 0.4rem;
+  }
+  .section--orange .eyebrow { color: var(--cream-soft); }
+
+  .display {
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    color: var(--orange);
+  }
+  .section--orange .display { color: var(--cream); }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+  .hero-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: 3px solid var(--orange);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-doodles {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 200px;
+    max-width: 35vw;
+    color: var(--orange);
+  }
+  .hero-title { font-size: clamp(2.8rem, 8vw, 4.6rem); color: var(--orange); }
+  .hero-subtitle {
+    font-weight: 800;
+    color: var(--purple);
+    letter-spacing: 0.03em;
+    margin-top: 0.6rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+  }
+
+  /* About */
+  .about-grid {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+  .about-copy { flex: 1.4; }
+  .about-copy p { font-size: 1.05rem; }
+  .about-copy .lead { font-weight: 700; color: var(--purple); }
+  .about-art {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .about-art img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 24px;
+    display: block;
+  }
+
+  /* Product sections */
+  .product-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .product-heading img { width: 90px; height: auto; }
+  .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: var(--purple);
+    color: var(--cream);
+    border-radius: 999px;
+    padding: 0.25rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .section--orange .badge { background: var(--cream); color: var(--orange); }
+
+  .lede { max-width: 760px; font-size: 1.05rem; }
+  .lede .lead { font-weight: 700; color: var(--purple); }
+  .section--orange .lede .lead { color: var(--cream); }
+
+  .feature-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .feature-row h3 {
+    color: var(--purple);
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+  }
+  .feature-icon {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .feature-icon img { max-height: 70px; max-width: 100%; }
+  .feature-icon svg { color: var(--orange); }
+  .feature-row p { font-size: 0.95rem; margin: 0; }
+  .travel-banner {
+    max-width: 100%;
+    max-height: 70px;
+    border-radius: 999px;
+    background: var(--cream-soft);
+    padding: 0.5rem 1rem;
+  }
+
+  .card-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .card {
+    background: var(--cream);
+    color: var(--ink);
+    border-radius: 20px;
+    padding: 1.5rem 1.75rem;
+  }
+  .card h3 {
+    color: var(--purple);
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .card p { margin: 0; font-size: 0.95rem; }
+
+  /* Team */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .team-card { text-align: left; }
+  .team-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    background: var(--orange-light);
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .team-card h3 {
+    font-family: 'Bagel Fat One', sans-serif;
+    font-size: 1.1rem;
+    color: var(--orange);
+    margin: 0 0 0.2rem;
+  }
+  .team-role {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .team-card p:last-child { font-size: 0.95rem; margin: 0; }
+
+  /* Contact */
+  .contact-grid {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-copy { flex: 1.2; min-width: 260px; }
+  .contact-art { flex: 1; min-width: 220px; text-align: center; }
+  .contact-art img { max-width: 320px; width: 100%; }
+  .contact-email {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .contact-email .label {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .contact-email a {
+    color: var(--purple);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .contact-email a:hover { text-decoration: underline; }
+
+  footer {
+    background: var(--ink);
+    color: var(--cream-soft);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--cream-soft); }
+
+  @media (max-width: 800px) {
+    .about-grid { flex-direction: column-reverse; }
+    .feature-row { grid-template-columns: 1fr; gap: 2.5rem; }
+    .card-row { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .nav-links { gap: 1rem; }
+    .nav-links a { font-size: 0.85rem; }
+    .contact-grid { flex-direction: column; text-align: center; }
+    .contact-email { justify-content: center; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Yoloday</h1>
-        <p class="tagline">AI-powered products that make everyday planning simple &mdash; starting with travel and startup branding.</p>
 
-        <h2>Business Description</h2>
-        <p>Yoloday is a startup building a small suite of AI-powered products that take a person's rough starting idea and turn it into a complete, ready-to-use result, without the hours of manual research that normally takes. We're starting with two products: <strong>Yoloday Travel</strong> and <strong>Yoloday Branding</strong>.</p>
-        <p>The core problem we solve is the gap between a small starting idea and a fully worked-out plan. Whether it's a trip or a brand, getting from an idea to something usable requires dozens of small, research-heavy decisions that most people don't have the time, expertise, or budget to make well on their own. Yoloday's AI does that work on their behalf.</p>
-        <p><strong>Target audience:</strong> Yoloday Travel serves individual and group travelers &mdash; solo travelers, couples, families, and groups of friends. Yoloday Branding serves early-stage startup founders who need a professional brand identity but don't yet have the budget or team to work with a traditional branding agency.</p>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="#top">Yoloday</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#travel">Travel</a></li>
+      <li><a href="#branding">Branding</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-        <h2>Team Information</h2>
-        <div class="team-member">
-            <h3>Steve Vanspall</h3>
-            <div class="role">Founder</div>
-            <p>Steve founded Yoloday and leads product and engineering. He has a background in software engineering, building and shipping web and software products, which he applies directly to architecting and developing Yoloday's AI-powered applications.</p>
-        </div>
-        <div class="team-member">
-            <h3>Tina Vanspall</h3>
-            <div class="role">Branding &amp; Social Media Consultant</div>
-            <p>Tina brings branding and social media consulting experience to Yoloday, informing the brand strategy, positioning, and go-to-market approach for both Yoloday Travel and Yoloday Branding.</p>
-        </div>
-
-        <h2>Product</h2>
-        <div class="product">
-            <span class="stage">In active development &middot; pre-launch</span>
-            <h3>Yoloday Travel</h3>
-            <p>An AI-assisted travel planning application for individual and group travelers. It takes a small starting idea &mdash; a destination, a rough date range, a budget, a few interests &mdash; and completes it into a full, personalized itinerary: day-by-day activities, accommodation suggestions, transportation between destinations, and a budget breakdown. Currently in active development as a functional prototype, with the core flow from initial idea to completed itinerary built and being refined ahead of public launch.</p>
-        </div>
-        <div class="product">
-            <span class="stage">In active development &middot; pre-launch</span>
-            <h3>Yoloday Branding</h3>
-            <p>An AI-assisted branding toolkit that helps startup founders move from a rough concept to a cohesive brand identity &mdash; quickly and affordably. Currently in active development ahead of public launch.</p>
-        </div>
-
-        <div class="contact">
-            For inquiries, contact us at:
-            <a href="mailto:info@yolo.day">info@yolo.day</a>
-        </div>
-        <div class="legal">
-            &copy; 2026 Yoloday Pty. Ltd.
-        </div>
+<header class="section hero" id="top">
+  <div class="wrap">
+    <div class="hero-logo" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="color:#fe5900">
+        <rect x="8" y="8" width="8" height="8" rx="1"/>
+        <text x="12" y="13.2" text-anchor="middle" font-size="4" font-family="Baloo 2, sans-serif" fill="currentColor" stroke="none">AI</text>
+        <path d="M8 4v2M12 4v2M16 4v2M8 18v2M12 18v2M16 18v2M4 8h2M4 12h2M4 16h2M18 8h2M18 12h2M18 16h2"/>
+      </svg>
     </div>
+    <svg class="hero-doodles" viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M40 20c20-15 45-15 55 0s-10 25 10 30 40-15 55 5"/>
+      <path d="M35 110l-14 12M35 110l4-18M35 110l16 6"/>
+      <path d="M35 110l 0 0"/>
+      <g transform="translate(35,110)">
+        <path d="M0 -22V22M-19 -11L19 11M-19 11L19 -11"/>
+      </g>
+    </svg>
+    <h1 class="hero-title">Yoloday</h1>
+    <p class="hero-subtitle">AI Solutions Agency</p>
+  </div>
+</header>
 
+<section class="section section--orange" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="eyebrow">Who we are</p>
+      <h2 class="display">What we do</h2>
+      <p style="margin-top:1.5rem;">
+        <span class="accent lead">Yoloday is a Melbourne-based startup creating AI-backed IT solutions for online consumers.</span>
+        Our aim is to make products that allow users to leverage the benefits of AI without the hassle. We deliver on this goal by creating sites that are simple to use, with the look and feel of a traditional website but with the added benefit of ambient AI. In 2026, Yoloday is kicking things off with a travel-based itinerary planner and a trademark and domain name checker site.
+      </p>
+    </div>
+    <div class="about-art">
+      <img src="images/lightbulb.jpg" alt="Illustration of a lightbulb, representing Yoloday's product ideas">
+    </div>
+  </div>
+</section>
 
-</body></html>
+<section class="section" id="travel">
+  <div class="wrap">
+    <span class="badge">In active development &middot; pre-launch</span>
+    <h2 class="display" style="margin-bottom:1.5rem;">Yolo Travel</h2>
+    <p class="lede">
+      <span class="lead">Yoloday Travel takes a simple one-page questionnaire and transforms it into a full itinerary plan.</span>
+      We know that prompts and chat boxes can be hard for some internet users to navigate, so we put the AI into the background, delivering the look, feel and functionality of a traditional website. This gives a wider range of consumers the added benefit of using AI to plan their trip without the hassle.
+    </p>
+    <p class="lede" style="margin-top:1rem;">
+      With Yoloday Travel you can plan and budget a trip at your own pace, tailoring your experience to your personal interests &mdash; and our AI assistant does the rest!
+    </p>
+
+    <div class="feature-row">
+      <div>
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="70" height="60" viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 60c15-30 40-45 70-40" stroke-dasharray="2 8"/>
+            <path d="M55 15l25 5-8 22-6-10-16-4z"/>
+          </svg>
+        </div>
+        <h3>Easy to use</h3>
+        <p>Simple click-through questionnaires.</p>
+      </div>
+      <div>
+        <div class="feature-icon">
+          <img class="travel-banner" src="images/travel-illustration.png" alt="Illustration of travelers with speech bubbles and world landmarks">
+        </div>
+        <h3>One stop planning site</h3>
+        <p>Set your dates, destinations and interests, building the trip of your dreams.</p>
+      </div>
+      <div>
+        <div class="feature-icon">
+          <img src="images/laptop-icon.png" alt="Illustration of a laptop">
+        </div>
+        <h3>AI powered without chat bot feel</h3>
+        <p>We've put the AI into the background of the site, delivering a traditional website click-through feel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--orange" id="branding">
+  <div class="wrap">
+    <span class="badge">In active development &middot; pre-launch</span>
+    <div class="product-heading">
+      <img src="images/cash-register.png" alt="Illustration of a cash register">
+      <h2 class="display">Yolo Branding</h2>
+    </div>
+    <p class="lede">
+      <span class="lead">Yoloday Branding is a comprehensive trademark, domain and branding assistant.</span>
+      We understand how time-consuming and difficult it can be to create a business name and then research domain and/or trademark availability, so we built this product to do it all in one place. Users simply fill out some key info and our site will suggest a name to suit, check the domain and trademark, and provide an easy-to-interpret risk rating report.
+    </p>
+    <div class="card-row">
+      <div class="card">
+        <h3>On the spot availability search and ratings</h3>
+        <p>A simple colour-coded rating system shows users the level of risk and coverage of similar domains or trademarks.</p>
+      </div>
+      <div class="card">
+        <h3>Branding and business name coaching</h3>
+        <p>We can suggest brand names for any business, from e-commerce and beyond. Simply key in the business offering and our site will take on the creative process of suggesting a name to suit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="wrap">
+    <h2 class="display">Meet the team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/team-steve.jpg" alt="Portrait of Steve Vanspall">
+        </div>
+        <h3>Steve Vanspall</h3>
+        <p class="team-role">CEO &amp; Product Developer</p>
+        <p>Steve is a passionate tech innovator and product strategist with a background in software engineering, dedicated to building and shipping seamless AI-powered products.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="images/team-tina.jpg" alt="Portrait of Tina Vanspall">
+        </div>
+        <h3>Tina Vanspall</h3>
+        <p class="team-role">Brand Ambassador</p>
+        <p>Tina is an experienced branding and social media consultant, ensuring Yoloday's mission and brand strategy resonate globally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--orange" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow">Got questions?</p>
+      <h2 class="display">Get in touch<br>with us!</h2>
+      <div class="contact-email">
+        <span class="label">Email</span>
+        <a href="mailto:info@yolo.day">info@yolo.day</a>
+      </div>
+    </div>
+    <div class="contact-art">
+      <img src="images/laptop-contact.png" alt="Illustration of a laptop">
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Yoloday Pty. Ltd.
+</footer>
+
+</body>
+</html>
