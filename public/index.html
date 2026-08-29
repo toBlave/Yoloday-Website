@@ -286,6 +286,7 @@
   }
 
   /* Team */
+  #team { background: var(--cream); }
   .team-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -298,14 +299,14 @@
     width: 100%;
     max-width: 460px;
     aspect-ratio: 1.35 / 1;
-    border-radius: 26px;
+    border-radius: 38px;
     background: var(--orange-light);
     overflow: hidden;
     margin: 0 auto 1.2rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 16px;
+    padding: 20px;
   }
   .team-photo img {
     display: block;
@@ -314,17 +315,17 @@
     width: auto;
     object-fit: cover;
     object-position: center;
-    border-radius: 28px;
+    border-radius: 72px;
     background: #f5f4ea;
   }
   .team-tag {
     position: absolute;
     right: 22px;
-    bottom: 18px;
+    bottom: 20px;
     font-family: 'Lilita One', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     color: var(--cream);
   }
   .team-role {
@@ -333,13 +334,16 @@
     font-size: 1rem;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    margin: 0 0 0.5rem;
+    margin: 1.25rem 0 0.5rem;
   }
   .team-desc {
     color: var(--purple);
-    font-size: 1rem;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 340px;
   }
 
   /* Contact */
